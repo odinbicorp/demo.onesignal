@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 
 
+
+Route::get('/send-message',[NotificationController::class,'sendMessage']);
+Route::post('/send-message',[NotificationController::class,'pushMessage']);
 Route::get('/push',[NotificationController::class,'sendPush']);
