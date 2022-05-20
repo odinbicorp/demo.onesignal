@@ -9,7 +9,7 @@ class NotificationController extends Controller
 {
     public function sendPush()
     {
-    	$fields['include_player_ids'] = ['945ed348-3c59-4af9-b369-ceecb898fb68'];
+    	$fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3'];
 		$message = 'hey!! this is test push.!';
 		$mess = OneSignal::sendPush($fields,$message);
 		dd($mess);
@@ -51,7 +51,7 @@ class NotificationController extends Controller
         );
 
         $fields = array(
-            'app_id' => "945ed348-3c59-4af9-b369-ceecb898fb68",
+            'app_id' => "9ee6bb4c-c352-4077-a8ac-4184c69f53e3",
             'filters' => array(array("field" => "tag", "key" => "user_id", "relation" => "=", "value" => "$user_id")),
             'contents' => $content
         );
