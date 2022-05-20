@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-          <script>
-            window.OneSignal = window.OneSignal || [];
-            OneSignal.push(function() {
-              OneSignal.init({
-                appId: "945ed348-3c59-4af9-b369-ceecb898fb68",
-              });
+         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+          window.OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "945ed348-3c59-4af9-b369-ceecb898fb68",
             });
-          </script>
+          });
+        </script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
