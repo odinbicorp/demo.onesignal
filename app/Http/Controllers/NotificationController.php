@@ -64,7 +64,7 @@ class NotificationController extends Controller
         curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
         // curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8'));
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8',
-            'Authorization: Basic MTZhNWZhZmYtMTA1MC00NTQyLWE3MGQtODcwMmE1OTFiYjUw'));
+            'Authorization: Basic ZDEzYzY0MzEtZjFjNC00ZjFkLTg1OGItMjUzYWUzZjBkZmQw'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_POST, TRUE);
