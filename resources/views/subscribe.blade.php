@@ -9,14 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script> -->
  <script src="/OneSignalSDKWorker.js" async=""></script>
-  <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "9ee6bb4c-c352-4077-a8ac-4184c69f53e3",
-    });
-  });
-</script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
 </head>
 <body>
 
@@ -50,8 +43,8 @@
 <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
-        appId: "945ed348-3c59-4af9-b369-ceecb898fb68",
-        subdomainName: 'notification',
+        appId: "9ee6bb4c-c352-4077-a8ac-4184c69f53e3",
+        subdomainName: 'onesignal',
         autoRegister: true,
         promptOptions: {
             /* These prompt options values configure both the HTTP prompt and the HTTP popup. */
