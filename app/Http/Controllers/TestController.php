@@ -65,7 +65,7 @@ class TestController extends Controller
 	        "url" => "https://onesignal.odinbi.app"
 	    ));
 	    $fields = array(
-	        'app_id' => "9ee6bb4c-c352-4077-a8ac-4184c69f53e3",
+	        'app_id' => "00439ee5-1c4a-4774-806d-81189e86a38d",
 	        'included_segments' => array(
 	            'Subscribed Users'
 	        ),
