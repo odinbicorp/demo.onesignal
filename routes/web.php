@@ -26,6 +26,7 @@ use App\Http\Controllers\TestController;
 // });
 
 Route::get('/test',[TestController::class,'test']);
+Route::get('/notification',[TestController::class,'notification']);
 
 Route::get('/send-message',[NotificationController::class,'sendMessage']);
 Route::post('/send-message',[NotificationController::class,'pushMessage']);
