@@ -9,12 +9,9 @@ class NotificationController extends Controller
 {
     public function sendPush()
     {
-    	$fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3'];
-		$message = 'hey!! this is test push.!';
-		$mess = OneSignal::sendPush($fields,$message);
-		dd($mess);
-		$notificationID = OneSignal::sendPush($fields, $message);
-		echo "1".$notificationID["id"];
+        $fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3']
+        $notificationMsg = 'Hello!! A tiny web push notification.!'
+        OneSignal::sendPush($fields, $notificationMsg);
     }
 
     public function getNotifications()

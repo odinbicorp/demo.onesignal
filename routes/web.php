@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\TestController;
 
 
 /*
@@ -24,7 +25,7 @@ use App\Http\Controllers\AdminController;
 //     return view('welcome');
 // });
 
-
+Route::get('/test',[TestController::class,'test']);
 
 Route::get('/send-message',[NotificationController::class,'sendMessage']);
 Route::post('/send-message',[NotificationController::class,'pushMessage']);
@@ -48,7 +49,7 @@ Route::get("/logout", [SessionController::class,'doLogout']);
 /**
  * Admin routes
  */
-Route::group(["namespace" => "Admin", "prefix" => "admin", "middleware" => ["admin"]], function() {
+Route::group(["namespace" => "admin", "prefix" => "admin", "middleware" => ["admin"]], function() {
 
 	Route::get("/", [AdminController::class,'index']);
     /**
