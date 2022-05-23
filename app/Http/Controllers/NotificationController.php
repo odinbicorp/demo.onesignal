@@ -9,9 +9,10 @@ class NotificationController extends Controller
 {
     public function sendPush()
     {
-        $fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3']
-        $notificationMsg = 'Hello!! A tiny web push notification.!'
+        $fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3'];
+        $notificationMsg = 'Hello!! A tiny web push notification.!';
         OneSignal::sendPush($fields, $notificationMsg);
+        return view('subscribe');
     }
 
     public function getNotifications()
@@ -36,6 +37,9 @@ class NotificationController extends Controller
 
     public function sendMessage()
     {
+         $fields['include_player_ids'] = ['9ee6bb4c-c352-4077-a8ac-4184c69f53e3'];
+        $notificationMsg = 'Hello!! A tiny web push notification.!';
+        OneSignal::sendPush($fields, $notificationMsg);
     	return view('subscribe');
     }
 
