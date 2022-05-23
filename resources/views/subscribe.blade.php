@@ -43,7 +43,7 @@
 <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
-        appId: "9ee6bb4c-c352-4077-a8ac-4184c69f53e3",
+        appId: "00439ee5-1c4a-4774-806d-81189e86a38d",
         subdomainName: 'onesignal',
         autoRegister: true,
         promptOptions: {
